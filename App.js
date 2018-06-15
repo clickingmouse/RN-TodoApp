@@ -48,7 +48,7 @@ class App extends React.Component {
     let { todos } = this.state;
     todos.forEach(todo => {
       if (todo.todoIndex === todoIndex) {
-        todo.Complete = !todo.Complete;
+        todo.complete = !todo.complete;
       }
     });
     this.setState({ todos });
